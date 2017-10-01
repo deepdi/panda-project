@@ -1,0 +1,381 @@
+    1  vi /etc/default/grub 
+    2  gedit /etc/default/grub 
+    3  sudo -su
+    4  sudo -su root
+    5  sudo
+    6  sudo -su root
+    7  gedit /etc/default/grub 
+    8  cat /etc/default/grub 
+    9  sudo -su root
+   10  gedit /etc/default/grub 
+   11  sudo update_grub
+   12  sudo update-grub
+   13  gedit /etc/default/grub 
+   14  sudo gedit /etc/default/grub 
+   15  sudo update-grub
+   16  wall -n 'hello'
+   17  sudo wall -n 'hello'
+   18  sudo su - root
+   19  ll
+   20  vim .bashrc 
+   21  go
+   22  . ./setpaths 
+   23  go
+   24  vim
+   25  man vim
+   26  man gcc
+   27  man g++
+   28  man g
+   29  ll
+   30  PWD
+   31  pwd
+   32  cd Desktop/
+   33  ll
+   34  mkdir dee
+   35  cd dee/
+   36  ll
+   37  pwd
+   38  alias go="cd /home/deepika/Desktop/dee"
+   39  cd -
+   40  go
+   41  cd 
+   42  vim setpaths
+   43  go
+   44  vim test.cpp
+   45  gcc test.cpp test.o
+   46  gcc test.cpp -o test.o
+   47  vim test.cpp
+   48  gcc test.cpp -o test.o
+   49  vim test.cpp
+   50  gcc test.cpp -o test.o
+   51  vim test.cpp
+   52  gcc test.cpp -o test.o
+   53  vim test.cpp
+   54  gcc test.cpp -o test.o
+   55  vim test.cpp
+   56  gcc test.cpp -o test.o
+   57  vim test.cpp
+   58  gcc test.cpp -o test.o
+   59  g++ test.cpp -o test.o
+   60  vim test.cpp
+   61  g++ test.cpp -o test.o
+   62  ./test.o 
+   63  vim test.cpp
+   64  vim one.cpp
+   65  g++ one.cpp -o one.o
+   66  ./one.o 
+   67  vim one.cpp
+   68  g++ one.cpp -o one.o
+   69  ./one.o 
+   70  vim one.cpp
+   71  g++ one.cpp -o one.o
+   72  vim one.cpp
+   73  g++ one.cpp -o one.o
+   74  vim one.cpp
+   75  g++ one.cpp -o one.o
+   76  ./one.o 
+   77  vim one.cpp
+   78  g++ one.cpp -o one.o
+   79  ./one.o 
+   80  python
+   81  . ./setpaths 
+   82  go
+   83  python
+   84  . ./setpaths 
+   85  go
+   86  python
+   87  vim test.py
+   88  python test.py 
+   89  vim test.py
+   90  python test.py 
+   91  vim test.py
+   92  python test.py 
+   93  vim test.py
+   94  python test.py 
+   95  python
+   96  gcc
+   97  . ./setpaths 
+   98  go
+   99  ll
+  100  vim test.cpp 
+  101  vim try.c
+  102  gcc try.c -o try
+  103  g++ try.c -o try
+  104  vim try.c
+  105  g++ try.c -o try
+  106  gcc try.c -o try
+  107  g try.c -o try
+  108  gcc -o try try.c 
+  109  vim try.c
+  110  gcc -o try try.c 
+  111  g++ try.c -o try
+  112  gcc try.c -o try 
+  113  gcc try.c -o try.o
+  114  ll
+  115  vim try.c
+  116  rm try
+  117  rm try.o 
+  118  gcc try.c -o try.o
+  119  g++  -o try try
+  120  g++  -o try try.c 
+  121  ./try
+  122  ./try.o 
+  123  vim try.c
+  124  g++ -o try.ocpp try.c 
+  125  gcc -o try.oc try.c 
+  126  ./try.oc
+  127  ./try.ocpp 
+  128  vim try.c
+  129  g++ -o try.ocpp try.c 
+  130  gcc -o try.oc try.c 
+  131  ./try.ocpp 
+  132  ./try.oc
+  133  vim try.c
+  134  g++ -o try.ocpp try.c 
+  135  vim try.c
+  136  g++ -o try.ocpp try.c 
+  137  vim try.c
+  138  g++ -o try.ocpp try.c 
+  139  ./try.ocpp 
+  140  vim try.c
+  141  g++ -o try.ocpp try.c 
+  142  ./try.ocpp 
+  143  vim try.c
+  144  vim str.cpp
+  145  g++ -o str str.cpp 
+  146  vim str.cpp
+  147  g++ -o str str.cpp 
+  148  vim str.cpp
+  149  g++ -o str str.cpp 
+  150  vim str.cpp
+  151  g++ -o str str.cpp 
+  152  ./str 
+  153  vim str.cpp
+  154  ./str 
+  155  ll
+  156  tar -xf logstash-5.4.0.tar.gz 
+  157  cd logstash-5.4.0/
+  158  ll
+  159  cd config/
+  160  ll
+  161  vi startup.options 
+  162  vi logstash.yml 
+  163  cd ../
+  164  ./bin/logstash
+  165  export JAVA_HOME=/usr/java/jre1.8.0_131/
+  166  ./bin/logstash
+  167  ../
+  168  cd ../
+  169  cd elasticsearch-5.4.0/
+  170  bin/elasticsearch-plugin install x-pack
+  171  cd ../
+  172  cd kibana-5.4.0-linux-x86_64/
+  173  bin/elasticsearch-plugin install x-pack
+  174  bin/kibana-plugin install x-pack
+  175  vim str.cpp
+  176  ls
+  177  tar -xf elasticsearch-5.4.0.tar.gz
+  178  ll
+  179  cd elasticsearch-5.4.0/
+  180  ll
+  181  ./bin/elasticsearch
+  182  java version
+  183  java -version
+  184  cd../
+  185  cd ../
+  186  ll
+  187  tar -xf jre-8u131-linux-x64.tar.gz 
+  188  ll
+  189  cd jre1.8.0_131/
+  190  l
+  191  vi README 
+  192  cd ../
+  193  cd /usr/bin/
+  194  cd ../
+  195  ll
+  196  mkdir java
+  197  sudo su
+  198  cd ../../
+  199  cd home/deepika/Downloads/elasticsearch-5.4.0/
+  200  ./bin/elasticsearch
+  201  export JAVA_HOME=/usr/java/jre1.8.0_131/
+  202  ./bin/elasticsearch
+  203  PS
+  204  ll
+  205  tar -xf kibana-5.4.0-linux-x86_64.tar.gz 
+  206  cd kibana-5.4.0-linux-x86_64/
+  207  ./bin/kibana
+  208  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+  209  sudo apt-get update && sudo apt-get install elasticsearch
+  210  uname -a
+  211  vim tic-tac-toe.cpp
+  212  g++ tic-tac-toe.cpp -o tic-tac-toe
+  213  vim tic-tac-toe.cpp
+  214  g++ tic-tac-toe.cpp -o tic-tac-toe
+  215  vim tic-tac-toe.cpp
+  216  g++ tic-tac-toe.cpp -o tic-tac-toe
+  217  vim tic-tac-toe.cpp
+  218  g++ tic-tac-toe.cpp -o tic-tac-toe
+  219  vim tic-tac-toe.cpp
+  220  g++ tic-tac-toe.cpp -o tic-tac-toe
+  221  ./tic-tac-toe 
+  222  vim tic-tac-toe.cpp
+  223  ./tic-tac-toe 
+  224  g++ tic-tac-toe.cpp -o tic-tac-toe
+  225  vim tic-tac-toe.cpp
+  226  g++ tic-tac-toe.cpp -o tic-tac-toe
+  227  vim tic-tac-toe.cpp
+  228  g++ tic-tac-toe.cpp -o tic-tac-toe
+  229  vim tic-tac-toe.cpp
+  230  g++ tic-tac-toe.cpp -o tic-tac-toe
+  231  vim tic-tac-toe.cpp
+  232  g++ tic-tac-toe.cpp -o tic-tac-toe
+  233  vim tic-tac-toe.cpp
+  234  g++ tic-tac-toe.cpp -o tic-tac-toe
+  235  ./tic-tac-toe 
+  236  vim tic-tac-toe.cpp
+  237  g++ tic-tac-toe.cpp -o tic-tac-toe
+  238  vim tic-tac-toe.cpp
+  239  g++ tic-tac-toe.cpp -o tic-tac-toe
+  240  vim tic-tac-toe.cpp
+  241  g++ tic-tac-toe.cpp -o tic-tac-toe
+  242  vim tic-tac-toe.cpp
+  243  g++ tic-tac-toe.cpp -o tic-tac-toe
+  244  vim tic-tac-toe.cpp
+  245  g++ tic-tac-toe.cpp -o tic-tac-toe
+  246  vim tic-tac-toe.cpp
+  247  g++ tic-tac-toe.cpp -o tic-tac-toe
+  248  ./tic-tac-toe 
+  249  vim tic-tac-toe.cpp
+  250  ssh avnaz.com -i avnaz-aws-key.pem 
+  251  chmod 400 avnaz-aws-key.pem 
+  252  ssh avnaz.com -i avnaz-aws-key.pem 
+  253  ssh avnaz.com -i avnaz-aws-key.pem
+  254  ssh ubuntu@avnaz.com -i avnaz-aws-key.pem 
+  255  pwd
+  256  ll
+  257  cd Desktop/
+  258  ll
+  259  ll movies/
+  260  cd movies/
+  261  ll
+  262  cd
+  263  pwd
+  264  python
+  265  sudo apt install pip
+  266  sudo apt install pip.0.1
+  267  sudo apt install pip9.0.1
+  268  sudo apt install pip 9.0.1
+  269  which pip
+  270  pip
+  271  sudo apt install python-pip
+  272  python
+  273  pip
+  274  which pip
+  275  pip install pprint
+  276  python
+  277  pip install django1.11.3
+  278  pip install django 1.11.3
+  279  which django
+  280  django
+  281  ll
+  282  python
+  283  django-admin --version
+  284  sudo apt install python-django-common
+  285  django-admin --version
+  286  python
+  287  pip install django
+  288  pip install --upgrade pip
+  289  python
+  290  django-admin --version
+  291  django-admin
+  292  sudo apt-get install python-django
+  293  django-admin --version
+  294  python
+  295  ll
+  296  mkdir djando-project
+  297  cd djando-project/
+  298  ll
+  299  django-admin.py startproject panda
+  300  ll
+  301  cd panda/
+  302  ll
+  303  cd panda/
+  304  ll
+  305  cd ../
+  306  ll
+  307  python manage.py runserver 
+  308  ps
+  309  pwd
+  310  ll
+  311  cd ../../
+  312  ll
+  313  yum install mysql mysql-server mysql-libs mysql-server
+  314  sudo apt install yum
+  315  yum install mysql mysql-server mysql-libs mysql-server
+  316  sudo yum install mysql mysql-server mysql-libs mysql-server
+  317  sudo apt install mysql
+  318  sudo apt-get install mysql-client-5.1 mysql-server-5.1
+  319  apt-get install mysql-client-5.1 mysql-server-5.1
+  320  sudo apt-get install mysql-client-5.1 mysql-server-5.1
+  321  sudo apt-get update
+  322  sudo apt-get install mysql-server
+  323  mysql
+  324  sudo su - root
+  325  sudo mysql_secure_installation
+  326  mysql
+  327  sudo su - root
+  328  mysql -u root -p
+  329  mysql -u root -p 
+  330  pip install mysql-python
+  331  sudo apt-get install libmysqlclient-dev
+  332  pip install mysql-python
+  333  sudo pip install mysql-python
+  334  cd djando-project/
+  335  ll
+  336  cd panda/
+  337  ll
+  338  cd panda/
+  339  ll
+  340  vim settings.py
+  341  mysql -u root -p 
+  342  ll
+  343  cd ..
+  344  python manage.py syncdb
+  345  manage.py help
+  346  ll
+  347  python manage.py help
+  348  python manage.py syncdb
+  349  python manage.py migrate
+  350  python manage.py shell
+  351  pwd
+  352  ll
+  353  cd panda/
+  354  ll
+  355  cd ..
+  356  ll
+  357  hostname -f
+  358  host `hostname`
+  359  ll /tmp/
+  360  ll
+  361  cd panda/
+  362  ll
+  363  cd ..
+  364  l
+  365  ll
+  366  cd panda/
+  367  vim models.py
+  368  ll
+  369  vim settings.py
+  370  cd ../
+  371  ll
+  372  python manage.py sql panda
+  373  python manage.py help
+  374  python manage.py sqlmigrate
+  375  python manage.py sqlmigrate panda
+  376  python manage.py makemigrations panda
+  377  mysql -u root -p 
+  378  cd panda/
+  379  vim settings.py
+  380  cd ..
+  381  history > mylog

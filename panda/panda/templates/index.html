@@ -1,0 +1,13 @@
+{% if panda_list %}
+    <ul>
+    {% for panda in panda_list %}
+        <li>
+            <a href="naman/">{{ panda.name }}</a>
+            <span>{{ panda.id_no }}</span>
+	    <span>{{ panda.dob }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No pndas alive.</p>
+{% endif %}
