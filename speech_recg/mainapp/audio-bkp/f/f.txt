@@ -1,0 +1,12 @@
+deepika
+hello
+In the language of visual design, a tag cloud (or word cloud) is one kind of "weighted list", as commonly used on geographic maps to represent the relative size of cities in terms of relative typeface size. An early printed example of a weighted list of English keywords was the "subconscious files" in Douglas Coupland's Microserfs (1995). A German appearance occurred in 1992.[3]
+
+The specific visual form and common use of the term "tag cloud" rose to prominence in the first decade of the 21st century as a widespread feature of early Web 2.0 websites and blogs, used primarily to visualize the frequency distribution of keyword metadata that describe website content, and as a navigation aid.
+
+The first tag clouds on a high-profile website were on the photo sharing site Flickr, created by Flickr co-founder and interaction designer Stewart Butterfield in 2004. That implementation was based on Jim Flanagan's Search Referral Zeitgeist,[4] a visualization of Web site referrers. Tag clouds were also popularized around the same time by Del.icio.us and Technorati, among others.
+
+Oversaturation of the tag cloud method and ambivalence about its utility as a web-navigation tool led to a noted decline of usage among these early adopters.[5] (Flickr would later "apologize" to the web-development community in their five-word acceptance speech for the 2006 "Best Practices" Webby Award, where they simply stated "sorry about the tag clouds.")[6]
+
+A second generation of software development discovered a wider diversity of uses for tag clouds as a basic visualization method for text data. Several extensions of tag clouds have been proposed in this context. Examples include Parallel Tag Clouds,[7] SparkClouds,[8] and Prefix Tag Clouds.[9] The Word Cloud Explorer, written in Adobe Flex, combines tag clouds with a number of interactive features for text analysis.[10]
+
