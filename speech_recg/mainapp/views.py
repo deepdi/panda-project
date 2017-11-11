@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+
+
 from __future__ import unicode_literals
 from django.shortcuts import render
 import os
@@ -9,11 +11,12 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from summarizer import summarize
 import glob 
-
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
-
-
-
+import requests
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 file_path="/home/deepika/djando-project/speech_recg/mainapp/audio"
 
 # Create your views here.
@@ -58,9 +61,9 @@ def goaction(request):
           return render_to_response('Summarize.html',{'summaryList':summaryList})
 
       if(action == "Sentiment_Analysis"):
-          #get_sentiment(file_name)
+          pos,neg,neu=get_sentiment(file_name)
           print "we will show image of sentiment analysis" 
-          return render(request,'Sentiment_Analysis.html')
+          return render_to_response('Sentiment_Analysis.html',{'pos':pos,'neg':neg,'neu':neu})
   
 def get_wordcloud(filename):
     #answer = open("/home/deepika/djando-project/speech_recg/mainapp/audio/"+filename.split('.')[0]+"/"+filename.split('.')[0]+".txt",'r')
@@ -118,28 +121,52 @@ def search(filename,find):
 
 def get_sentiment(filename):
     #with open(filename, 'r') as myfile:
-    with open("/home/deepika/djando-project/speech_recg/mainapp/audio/"+filename.split('.')[0]+"/"+filename.split('.')[0]+".txt",'r') as myFile:
-     text = myFile.read().replace('\n', '')
-    blob = TextBlob(text)
-    total = 0
-    positive = 0
-    negative = 0
-    for sentence in blob.sentences:
-        total += abs(sentence.sentiment.polarity)
-        if sentence.sentiment.polarity > 0:
-            positive += sentence.sentiment.polarity
-        else:
-            negative += abs(sentence.sentiment.polarity)
-    positive_sentiment =  (positive / total) * 100
-    negative_sentiment = (negative / total) * 100
-    answer = []
-    answer.append(positive_sentiment)
-    answer.append(negative_sentiment)
-    labels = ['Positive', 'Negative']
-    sizes = answer
-    colors = ['blue','red']
-    patches, texts = plt.pie(sizes, colors=colors, shadow=True, startangle=90)
-    plt.legend(patches, labels, loc="best")
-    plt.axis('equal')
-    plt.tight_layout()
-    plt.savefig("/home/deepika/djando-project/speech_recg/mainapp/static/Sentiment.png")
+#    with open("/home/deepika/djando-project/speech_recg/mainapp/audio/"+filename.split('.')[0]+"/"+filename.split('.')[0]+".txt",'r') as myFile:
+#     text = myFile.read().replace('\n', '')
+#    blob = TextBlob(text)
+#    total = 0
+#    positive = 0
+#    negative = 0
+#    for sentence in blob.sentences:
+#        total += abs(sentence.sentiment.polarity)
+#        if sentence.sentiment.polarity > 0:
+#            positive += sentence.sentiment.polarity
+#        else:
+#            negative += abs(sentence.sentiment.polarity)
+#    positive_sentiment =  (positive / total) * 100
+#    negative_sentiment = (negative / total) * 100
+#    answer = []
+#    answer.append(positive_sentiment)
+#    answer.append(negative_sentiment)
+#    labels = ['Positive', 'Negative']
+#    sizes = answer
+#    colors = ['blue','red']
+#    patches, texts = plt.pie(sizes, colors=colors, shadow=True, startangle=90)
+#    plt.legend(patches, labels, loc="best")
+#    plt.axis('equal')
+#    plt.tight_layout()
+#    plt.savefig("/home/deepika/djando-project/speech_recg/mainapp/static/Sentiment.png")
+    text = ""
+    print filename
+    analyzer = SentimentIntensityAnalyzer()
+    with open("/home/deepika/djando-project/speech_recg/mainapp/audio/"+filename.split('.')[0]+"/"+filename.split('.')[0]+".txt",'r') as myfile:
+        text = myfile.read().replace('\n',' ')
+    vs = analyzer.polarity_scores(text)
+    vs['pos'] = vs['pos'] * 100
+    vs['neg'] = vs['neg'] * 100
+    vs['neu'] = vs['neu'] * 100
+
+    return vs['pos'],vs['neg'],vs['neu']
+    #answer = []
+    #answer.append(vs['pos'])
+    #answer.append(vs['neg'])
+    #answer.append(vs['neu'])
+    #labels = ['Positive', 'Negative', 'Neutral']
+    #sizes = answer
+    #colors = ['blue','red', 'green']
+    #patches, texts = plt.pie(sizes, colors=colors, shadow=True, startangle=90)
+    #plt.legend(patches, labels, loc="best")
+    #plt.axis('equal')
+    #plt.tight_layout()
+    #plt.savefig("/home/deepika/djando-project/speech_recg/mainapp/static/Sentiment.png")
+ 
